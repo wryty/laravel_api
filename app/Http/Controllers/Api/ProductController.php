@@ -1,12 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use Symfony\Component\HttpFoundation\Response;
 
-class ApiController extends Controller
+class ProductController extends Controller
 {
     public function index()
     {
