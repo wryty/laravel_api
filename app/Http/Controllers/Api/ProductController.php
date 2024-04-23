@@ -46,7 +46,7 @@ class ProductController extends Controller
     public function statistic()
     {
         $totalStock = Product::sum('count_in_stock');
-        $uniqueProducts = Product::count();
+        $uniqueProducts = Product::distinct('title')->count();
         $totalCost = Product::sum('cost');
 
         return [
